@@ -18,4 +18,8 @@ class DragAndDropController extends Controller
 
         return response()->json(['message' => 'Form submitted successfully']);
     }
+    public function showDragAndDropPage()
+    {
+        return view('drag-and-drop'); // assuming 'drag-and-drop.blade.php' is the Blade file
+    }
 }
